@@ -132,39 +132,46 @@ nav ul a:hover::after{
 .sobre .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .sobre .sobre-text{
     width: 100%;
-    padding-right: 40%;
+    /*padding-right: 100%;*/
 }
 .sobre .sobre-text p{
     margin: 18px 0;
     color: #000000a6;
 }
-.sobre .sobre-img{
-    width: 50%;
-}
-.sobre .sobre-img{
-    width: 100%;
-    border-radius: 10px;
-}
+
 .como .container{
     display: flex;
     text-align: center;
 }
+
 .como .como-text p{
     margin: 18px 0;
     color: #000000a6;
 }
+
 .vtg .container{
     display: flex;
     text-align: center;
 }
 .vtg .vtg-text ul{
     align-items: center;
+    list-style-type: none;
 }
 .vtg .vtg-text p{
     margin: 18px 0;
     color: #000000a6;
+}
+
+.referencias{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.referencias-text{
+    width: 100%;
 }
