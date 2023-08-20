@@ -1,0 +1,170 @@
+/* Página Home */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+        background-color: #f1f6fc31;
+}
+section,
+footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s; 
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: #3580db;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9cf9;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+    
+}       
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: #FFFFFF;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a::after {
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: #FFFFFF;
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+.introducao .container{
+    display: flex;
+    align-items: center;
+}
+.introducao .introducao-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.introducao .introducao-text h3{
+    font-size: 56px;
+}
+.introducao .introducao-text h3{
+    margin: 5px 0 10px 0;
+}
+.introducao .introducao-img{
+    width: 50%;
+}
+.footer{
+    background-color: #4f9cf9;
+    text-align: center;
+}
+.footer p{
+    color: #FFFFFF;
+}
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 100%;
+    padding-right: 40%;
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.como .container{
+    display: flex;
+    text-align: center;
+}
+.como .como-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.vtg .container{
+    display: flex;
+    text-align: center;
+}
+.vtg .vtg-text ul{
+    align-items: center;
+}
+.vtg .vtg-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
